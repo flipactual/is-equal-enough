@@ -1,0 +1,18 @@
+{
+  "name": "is-practically-equal",
+  "version": "1.0.0",
+  "description": "Determine whether two numbers are practically equal.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/_mocha --",
+    "coverage": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha --",
+    "view-coverage": "open ./coverage/lcov-report/index.html"
+  },
+  "repository": "flipactual/is-practically-equal",
+  "author": "Flip",
+  "license": "MIT",
+  "devDependencies": {
+    "istanbul": "^0.4.1",
+    "mocha": "^2.3.4"
+  }
+}
