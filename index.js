@@ -1,4 +1,3 @@
-const EPSILON = Number.EPSILON
 const abs = Math.abs
 
 /**
@@ -8,18 +7,20 @@ const abs = Math.abs
  * A number.
  * @param {Number} b
  * Another number.
+ * @param {Number} tolerance
+ * The acceptable tolerance.
  *
  * @example
- * isPracticallyEqual(0.15 + 0.15, 0.1 + 0.2)
+ * isPracticallyEqual(0.15 + 0.15, 0.1 + 0.2, Number.EPSILON)
  * // → true
  *
  * @return {Boolean}
  * Whether the numbers are practically equal or not.
  */
-function isPracticallyEqual(a, b) {
+function isPracticallyEqual(a, b, tolerance) {
   const x = abs(a)
   const y = abs(b)
-  return x === y || abs(x - y) / (x + y) < EPSILON
+  return x === y || abs(x - y) / (x + y) < tolerance
 }
 
 module.exports = isPracticallyEqual

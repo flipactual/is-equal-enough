@@ -8,6 +8,7 @@ Determine whether two numbers are practically equal.
 | --- | --- | ---- |
 | a | Number | A number. |
 | b | Number | Another number. |
+| tolerance | Number | The acceptable tolerance. |
 
 **Returns:**
 
@@ -16,6 +17,6 @@ _Boolean_ Whether the numbers are practically equal or not.
 **Example:**
 
 ```js
-isPracticallyEqual(0.15 + 0.15, 0.1 + 0.2)
+isPracticallyEqual(0.15 + 0.15, 0.1 + 0.2, Number.EPSILON)
 // → true
 ```
