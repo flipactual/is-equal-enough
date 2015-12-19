@@ -1,22 +1,11 @@
-# is-practically-equal
+# is-equal-enough
 
-Determine whether two numbers are practically equal.
+Determine whether two numbers are within a provided tolerance of each other.
 
-**Parameters:**
-
-| Name | Type | Description |
-| --- | --- | ---- |
-| a | Number | A number. |
-| b | Number | Another number. |
-| tolerance | Number | The acceptable tolerance. |
-
-**Returns:**
-
-_Boolean_ Whether the numbers are practically equal or not.
-
-**Example:**
+## Example:
 
 ```js
-isPracticallyEqual(0.15 + 0.15, 0.1 + 0.2, Number.EPSILON)
+const isEqualEnough = require('is-equal-enough')(Number.EPSILON)
+isEqualEnough(0.15 + 0.15, 0.1 + 0.2)
 // → true
 ```
