@@ -1,7 +1,7 @@
 {
   "name": "is-equal-enough",
-  "version": "3.0.0",
-  "description": "Determine whether two numbers are practically equal.",
+  "version": "3.0.1",
+  "description": "Determine whether two numbers are within a provided tolerance of each other.",
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/_mocha --",
