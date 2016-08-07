@@ -1,4 +1,4 @@
-const abs = Math.abs
+const abs = Math.abs;
 
 /**
  * Create a function with specified tolerance for comparing numbers.
@@ -15,10 +15,10 @@ const abs = Math.abs
  */
 function isEqualEnough(tolerance) {
   return (a, b) => {
-    const x = abs(a)
-    const y = abs(b)
-    return x === y || abs(x - y) / (x + y) < tolerance
-  }
+    const x = abs(a);
+    const y = abs(b);
+    return x === y || abs(x - y) / (x + y) < tolerance;
+  };
 }
 
 /**
@@ -38,4 +38,4 @@ function isEqualEnough(tolerance) {
  * Whether the numbers are within the tolerance or not.
  */
 
-module.exports = isEqualEnough
+module.exports = isEqualEnough;
