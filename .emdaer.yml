@@ -1,0 +1,17 @@
+- shields:
+    style: 'flat-square'
+    shields:
+      - alt: 'flipactual'
+        image: 'badge/😋-flipactual-43A6F6.svg'
+        link: 'https://flipactual.com/'
+      - alt: 'Travis'
+        image: 'travis/flipactual/is-equal-enough.svg'
+        link: 'https://travis-ci.org/flipactual/is-equal-enough/'
+      - alt: 'Node'
+        image: 'node/v/is-equal-enough.svg'
+        link: 'http://npmjs.com/package/is-equal-enough'
+      - alt: 'NPM'
+        image: 'npm/v/is-equal-enough.svg'
+        link: 'http://npmjs.com/package/is-equal-enough'
+- jsdoc: 'index.js'
+- license: true

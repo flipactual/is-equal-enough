@@ -7,7 +7,7 @@ const abs = Math.abs;
  * The acceptable tolerance.
  *
  * @example
- * const isEqualEnough = require('is-equal-enough')(Number.EPSILON)
+ * const isEqualEnough = require('is-equal-enough')(Number.EPSILON);
  * // → instantiatedIsEqualEnough
  *
  * @return {instantiatedIsEqualEnough}
@@ -31,7 +31,7 @@ function isEqualEnough(tolerance) {
  * Another number.
  *
  * @example
- * isEqualEnough(0.15 + 0.15, 0.1 + 0.2)
+ * isEqualEnough(0.15 + 0.15, 0.1 + 0.2);
  * // → true
  *
  * @return {Boolean}
