@@ -1,7 +1,27 @@
-[![flipactual](https://img.shields.io/badge/😋-flipactual-43A6F6.svg?style=flat-square)](https://flipactual.com/)
+[![flipactual](https://img.shields.io/badge/😋-flipactual-218AC7.svg?style=flat-square)](https://www.flipactual.com/)
 [![Travis](https://img.shields.io/travis/flipactual/is-equal-enough.svg?style=flat-square)](https://travis-ci.org/flipactual/is-equal-enough/)
 [![Node](https://img.shields.io/node/v/is-equal-enough.svg?style=flat-square)](http://npmjs.com/package/is-equal-enough)
 [![NPM](https://img.shields.io/npm/v/is-equal-enough.svg?style=flat-square)](http://npmjs.com/package/is-equal-enough)
+
+## Scripts
+
+### `test` – run the tests
+
+```sh
+npm run test
+```
+
+### `lint` – lint the codebase
+
+```sh
+npm run lint
+```
+
+### `write-readme` – generate the README
+
+```sh
+npm run write-readme
+```
 
 ## Functions
 
