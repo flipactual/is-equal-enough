@@ -1,6 +1,6 @@
 {
   "name": "is-equal-enough",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Determine whether two numbers are within a provided tolerance of each other",
   "repository": "flipactual/is-equal-enough",
   "author": {

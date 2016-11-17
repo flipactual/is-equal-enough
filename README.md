@@ -2,7 +2,7 @@
 
 [![flipactual](https://img.shields.io/badge/😋-flipactual-218AC7.svg?style=flat-square)](https://www.flipactual.com/)
 [![Travis](https://img.shields.io/travis/flipactual/is-equal-enough.svg?style=flat-square)](https://travis-ci.org/flipactual/is-equal-enough/)
-[![Codecov](https://img.shields.io/codecov/c/github/flipactual/fuzzy-proxy.svg?style=flat-square)](https://codecov.io/gh/flipactual/fuzzy-proxy/)
+[![Codecov](https://img.shields.io/codecov/c/github/flipactual/is-equal-enough.svg?style=flat-square)](https://codecov.io/gh/flipactual/is-equal-enough/)
 [![Node](https://img.shields.io/node/v/is-equal-enough.svg?style=flat-square)](http://npmjs.com/package/is-equal-enough)
 [![NPM](https://img.shields.io/npm/v/is-equal-enough.svg?style=flat-square)](http://npmjs.com/package/is-equal-enough)
 
