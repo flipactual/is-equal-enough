@@ -1,7 +1,7 @@
 {
   "name": "is-equal-enough",
-  "version": "3.0.1",
-  "description": "Determine whether two numbers are within a provided tolerance of each other.",
+  "version": "3.0.2",
+  "description": "Determine whether two numbers are within a provided tolerance of each other",
   "repository": "flipactual/is-equal-enough",
   "author": {
     "name": "Flip",
@@ -14,15 +14,19 @@
     "node": ">=6.0.0"
   },
   "scripts": {
-    "test": "node_modules/.bin/_mocha --",
-    "lint": "node_modules/.bin/eslint ./**/*.js --",
-    "write-readme": "./node_modules/.bin/emdaer"
+    "test": "nyc mocha",
+    "lint": "eslint ./**/*.js --",
+    "coverage": "nyc report --reporter=html mocha && open ./coverage/index.html",
+    "codecov": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "readme": "emdaer"
   },
   "devDependencies": {
+    "codecov": "^1.0.1",
     "emdaer": "^0.3.2",
     "eslint": "^3.2.2",
     "eslint-config-airbnb-base": "^5.0.1",
     "eslint-plugin-import": "^1.13.0",
-    "mocha": "^2.3.4"
+    "mocha": "^2.3.4",
+    "nyc": "^9.0.1"
   }
 }
