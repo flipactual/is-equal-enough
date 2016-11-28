@@ -1,7 +1,7 @@
 {
   "name": "is-equal-enough",
-  "version": "3.0.3",
-  "description": "Determine whether two numbers are within a provided tolerance of each other",
+  "version": "3.0.4",
+  "description": "Determine whether values are within a tolerance of each other",
   "repository": "flipactual/is-equal-enough",
   "author": {
     "name": "Flip",

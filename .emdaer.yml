@@ -17,7 +17,7 @@
       - alt: 'NPM'
         image: 'npm/v/is-equal-enough.svg'
         link: 'http://npmjs.com/package/is-equal-enough'
-- text: 'Determine whether two numbers are within a provided tolerance of each other'
+- text: 'Determine whether values are within a tolerance of each other'
 - jsdoc: 'index.js'
 - include: './docs/scripts.md'
 - license: true

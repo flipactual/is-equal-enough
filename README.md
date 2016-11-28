@@ -6,7 +6,7 @@
 [![Node](https://img.shields.io/node/v/is-equal-enough.svg?style=flat-square)](http://npmjs.com/package/is-equal-enough)
 [![NPM](https://img.shields.io/npm/v/is-equal-enough.svg?style=flat-square)](http://npmjs.com/package/is-equal-enough)
 
-Determine whether two numbers are within a provided tolerance of each other
+Determine whether values are within a tolerance of each other
 
 ## Functions
 
