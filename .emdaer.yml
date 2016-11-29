@@ -18,6 +18,6 @@
         image: 'npm/v/is-equal-enough.svg'
         link: 'http://npmjs.com/package/is-equal-enough'
 - text: 'Determine whether values are within a tolerance of each other'
-- jsdoc: 'index.js'
+- jsdoc: './src/index.js'
 - include: './docs/scripts.md'
 - license: true

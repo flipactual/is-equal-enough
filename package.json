@@ -1,6 +1,6 @@
 {
   "name": "is-equal-enough",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "description": "Determine whether values are within a tolerance of each other",
   "repository": "flipactual/is-equal-enough",
   "author": {
@@ -9,7 +9,7 @@
     "url": "https://github.com/flipactual"
   },
   "license": "MIT",
-  "main": "index.js",
+  "main": "lib/index.js",
   "engines": {
     "node": ">=6.0.0"
   },
@@ -18,9 +18,13 @@
     "lint": "eslint ./**/*.js --",
     "coverage": "nyc report --reporter=html mocha && open ./coverage/index.html",
     "codecov": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-    "readme": "emdaer"
+    "readme": "emdaer",
+    "compile": "babel src -d lib",
+    "prepublish": "npm run compile"
   },
   "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.16.0",
     "codecov": "^1.0.1",
     "emdaer": "^0.3.2",
     "eslint": "^3.2.2",
