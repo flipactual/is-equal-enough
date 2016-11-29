@@ -1,5 +1,5 @@
 const assert = require('assert');
-const isEqualEnough = require('../src')(Number.EPSILON);
+const isEqualEnough = require('../src');
 
 describe('isEqualEnough', () => {
   it('Knows that 0 is 0.0', () => {

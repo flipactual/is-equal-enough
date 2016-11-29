@@ -8,48 +8,19 @@
 
 Determine whether values are within a tolerance of each other
 
-## Functions
-
-<dl>
-<dt><a href="#isEqualEnough">isEqualEnough(tolerance)</a> ⇒ <code><a href="#instantiatedIsEqualEnough">instantiatedIsEqualEnough</a></code></dt>
-<dd><p>Create a function with specified tolerance for comparing numbers.</p>
-</dd>
-</dl>
-
-## Typedefs
-
-<dl>
-<dt><a href="#instantiatedIsEqualEnough">instantiatedIsEqualEnough</a> ⇒ <code>Boolean</code></dt>
-<dd></dd>
-</dl>
-
 <a name="isEqualEnough"></a>
 
-## isEqualEnough(tolerance) ⇒ <code>[instantiatedIsEqualEnough](#instantiatedIsEqualEnough)</code>
-Create a function with specified tolerance for comparing numbers.
+## isEqualEnough(a, b, [tolerance]) ⇒ <code>boolean</code>
+Determine whether two numbers are within a provided tolerance of each other.
 
 **Kind**: global function  
-**Returns**: <code>[instantiatedIsEqualEnough](#instantiatedIsEqualEnough)</code> - Instatiated function with tolerance set.  
+**Returns**: <code>boolean</code> - Whether the numbers are within the tolerance or not.  
 
-| Param | Type | Description |
-| --- | --- | --- |
-| tolerance | <code>Number</code> | The acceptable tolerance. |
-
-**Example**  
-```js
-const isEqualEnough = require('is-equal-enough')(Number.EPSILON);
-// → instantiatedIsEqualEnough
-```
-<a name="instantiatedIsEqualEnough"></a>
-
-## instantiatedIsEqualEnough ⇒ <code>Boolean</code>
-**Kind**: global typedef  
-**Returns**: <code>Boolean</code> - Whether the numbers are within the tolerance or not.  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| a | <code>Number</code> | A number. |
-| b | <code>Number</code> | Another number. |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| a | <code>number</code> |  | A number |
+| b | <code>number</code> |  | Another number |
+| [tolerance] | <code>number</code> | <code>Number.EPSILON</code> | The acceptable tolerance. |
 
 **Example**  
 ```js

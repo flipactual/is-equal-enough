@@ -1,6 +1,6 @@
 {
   "name": "is-equal-enough",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Determine whether values are within a tolerance of each other",
   "repository": "flipactual/is-equal-enough",
   "author": {
