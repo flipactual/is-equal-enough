@@ -42,10 +42,10 @@ npm run test
 npm run lint
 ```
 
-### `write-readme` – generate the README
+### `readme` – generate the README
 
 ```sh
-npm run write-readme
+npm run readme
 ```
 
 ## License
