@@ -1,6 +1,6 @@
 {
   "name": "is-equal-enough",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "description": "Determine whether values are within a tolerance of each other",
   "repository": "flipactual/is-equal-enough",
   "author": {
@@ -14,23 +14,27 @@
     "node": ">=6.0.0"
   },
   "scripts": {
-    "test": "nyc mocha",
-    "lint": "eslint ./**/*.js --",
-    "coverage": "nyc report --reporter=html mocha && open ./coverage/index.html",
-    "codecov": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "test": "nyc ava",
+    "coverage": "nyc --reporter=html ava && open ./coverage/index.html",
+    "codecov": "nyc --reporter=text-lcov > coverage.lcov && codecov",
+    "lint": "eslint .",
     "readme": "emdaer",
     "compile": "babel src -d lib",
     "prepublish": "npm run compile"
   },
   "devDependencies": {
+    "ava": "^0.17.0",
     "babel-cli": "^6.18.0",
     "babel-preset-latest": "^6.16.0",
     "codecov": "^1.0.1",
     "emdaer": "^0.3.2",
     "eslint": "^3.2.2",
     "eslint-config-airbnb-base": "^5.0.1",
+    "eslint-plugin-ava": "^4.0.0",
     "eslint-plugin-import": "^1.13.0",
-    "mocha": "^2.3.4",
-    "nyc": "^9.0.1"
+    "nyc": "^10.0.0"
+  },
+  "ava": {
+    "verbose": true
   }
 }

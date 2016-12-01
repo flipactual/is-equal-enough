@@ -1,20 +1,27 @@
-const assert = require('assert');
+const test = require('ava');
 const isEqualEnough = require('../src');
 
-describe('isEqualEnough', () => {
-  it('Knows that 0 is 0.0', () => {
-    assert.equal(isEqualEnough(0, 0.0), true);
-  });
-  it('Knows that 1 is 1', () => {
-    assert.equal(isEqualEnough(1, 1), true);
-  });
-  it('Knows that 1 is not 1.1', () => {
-    assert.equal(isEqualEnough(1, 1.1), false);
-  });
-  it('Knows that -1 is -1', () => {
-    assert.equal(isEqualEnough(-1, -1), true);
-  });
-  it('Knows that -1 is not -1.000000000000001', () => {
-    assert.equal(isEqualEnough(-1, -1.000000000000001), false);
-  });
+test('Knows that 0 is 0.0', t => {
+  t.plan(1);
+  t.is(isEqualEnough(0, 0.0), true);
+});
+
+test('Knows that 1 is 1', t => {
+  t.plan(1);
+  t.is(isEqualEnough(1, 1), true);
+});
+
+test('Knows that 1 is not 1.1', t => {
+  t.plan(1);
+  t.is(isEqualEnough(1, 1.1), false);
+});
+
+test('Knows that -1 is -1', t => {
+  t.plan(1);
+  t.is(isEqualEnough(-1, -1), true);
+});
+
+test('Knows that -1 is not -1.000000000000001', t => {
+  t.plan(1);
+  t.is(isEqualEnough(-1, -1.000000000000001), false);
 });

@@ -36,6 +36,12 @@ isEqualEnough(0.15 + 0.15, 0.1 + 0.2);
 npm run test
 ```
 
+### `coverage` – generate and view code coverage as HTML
+
+```sh
+npm run coverage
+```
+
 ### `lint` – lint the codebase
 
 ```sh
@@ -46,6 +52,12 @@ npm run lint
 
 ```sh
 npm run readme
+```
+
+### `compile` – compile the code
+
+```sh
+npm run compile
 ```
 
 ## License
